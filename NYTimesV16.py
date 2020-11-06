@@ -24,8 +24,7 @@ url = 'http://www.nytimes.com'
 r = requests.get(url)
 soup = BeautifulSoup(r.text, 'lxml')
 currentDT = str(datetime.now())
-today = date.today()
-currentDate = today.strftime("%m/%d/%y")
+currentDate = date.today().strftime("%m/%d/%y")
 mylist = []
 mylist2 = []
 
